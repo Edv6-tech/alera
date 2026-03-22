@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alera - Your Women's Health Companion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <!-- Logo/Brand -->
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                        <div class="pulse-ring"></div>
+                    </div>
+                    <span class="logo-text">Alera</span>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="breast.html">Breast Health</a></li>
+                <li><a href="vaginal_health.html">Vaginal Health</a></li>
+                <li><a href="menstrual_health.html">Period Health</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <button class="chat-btn" onclick="toggleAIChat()">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Assistant</span>
+                </button>
+                <a href="#signin" class="signin-btn">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-particles"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Empower Your Women's Health Journey</h1>
+                    <p class="hero-subtitle">
+                        Experience the future of personalized healthcare with AI-powered assessments, intelligent tracking, and compassionate guidance designed specifically for women.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>50K+</h3>
+                            <p>Women Empowered</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>95%</h3>
+                            <p>Accuracy Rate</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>AI Support</p>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#assessments" class="btn-primary">
+                            <i class="fas fa-heartbeat"></i>
+                            Start Health Assessment
+                        </a>
+                        <a href="#explore" class="btn-secondary">
+                            <i class="fas fa-compass"></i>
+                            Explore Features
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Women's health empowerment with AI technology" class="hero-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Assessments Section -->
+        <section class="assessments" id="assessments">
+            <div class="section-header">
+                <h2 class="section-title">AI-Powered Health Assessments</h2>
+                <p class="section-subtitle">
+                    Get instant, personalized insights about your health with our advanced AI technology
+                </p>
+            </div>
+
+            <div class="assessments-grid">
+                <div class="assessment-card breast-card">
+                    <div class="card-glow"></div>
+                    <div class="assessment-icon">
+                        <i class="fas fa-heart"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Breast Health Assessment</h3>
+                    <p>Advanced AI analysis for early detection and personalized breast health recommendations</p>
+                    <div class="assessment-features">
+                        <span><i class="fas fa-shield-alt"></i> 95% Accuracy</span>
+                        <span><i class="fas fa-clock"></i> 5 Minutes</span>
+                        <span><i class="fas fa-lock"></i> 100% Private</span>
+                    </div>
+                    <a href="breast.html" class="assessment-btn">
+                        <span>Start Assessment</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="assessment-card vaginal-card">
+                    <div class="card-glow"></div>
+                    <div class="assessment-icon">
+                        <i class="fas fa-female"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Vaginal Health Assessment</h3>
+                    <p>Discreet, professional analysis for comprehensive vaginal wellness insights</p>
+                    <div class="assessment-features">
+                        <span><i class="fas fa-user-md"></i> Expert-Reviewed</span>
+                        <span><i class="fas fa-microscope"></i> Symptom Analysis</span>
+                        <span><i class="fas fa-eye-slash"></i> Confidential</span>
+                    </div>
+                    <a href="vaginal_health.html" class="assessment-btn">
+                        <span>Start Assessment</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="assessment-card period-card">
+                    <div class="card-glow"></div>
+                    <div class="assessment-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Period Health Tracker</h3>
+                    <p>Intelligent menstrual cycle tracking with AI-powered predictions and insights</p>
+                    <div class="assessment-features">
+                        <span><i class="fas fa-brain"></i> AI Predictions</span>
+                        <span><i class="fas fa-chart-line"></i> Pattern Analysis</span>
+                        <span><i class="fas fa-bell"></i> Smart Reminders</span>
+                    </div>
+                    <a href="menstrual_health.html" class="assessment-btn">
+                        <span>Start Tracking</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="section-header">
+                <h2 class="section-title">Real Stories from Real Women</h2>
+                <p class="section-subtitle">
+                    Discover how Alera has transformed women's health journeys worldwide
+                </p>
+            </div>
+
+            <div class="reviews-showcase">
+                <div class="review-card featured">
+                    <div class="review-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Life-Changing</span>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Alera's breast health assessment detected early signs that my regular checkups missed. The AI is incredibly accurate and the privacy features give me complete peace of mind. This platform literally saved my life!"
+                        </p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b332c1ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah M." class="author-avatar">
+                            <div class="author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <p>Breast Health • Early Detection</p>
+                            </div>
+                        </div>
+                        <div class="review-impact">
+                            <span class="impact-tag">Life-Saving</span>
+                            <span class="impact-tag">95% Accurate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card premium">
+                    <div class="review-badge">
+                        <i class="fas fa-crown"></i>
+                        <span>Premium User</span>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "The period tracker is incredibly detailed and AI predictions are spot-on! I love how it helps me understand my cycle better than any other app I've tried. The ovulation predictions have been game-changing for family planning."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Jessica L." class="author-avatar">
+                            <div class="author-info">
+                                <h4>Jessica Lopez</h4>
+                                <p>Period Health • Family Planning</p>
+                            </div>
+                        </div>
+                        <div class="review-impact">
+                            <span class="impact-tag">Cycle Clarity</span>
+                            <span class="impact-tag">AI Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card vip">
+                    <div class="review-badge">
+                        <i class="fas fa-gem"></i>
+                        <span>VIP Member</span>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Finally, a discreet and professional way to track vaginal health! The assessments are comprehensive and recommendations have helped me maintain better reproductive wellness. The privacy features are outstanding."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Emily R." class="author-avatar">
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Vaginal Health • Wellness Care</p>
+                            </div>
+                        </div>
+                        <div class="review-impact">
+                            <span class="impact-tag">Discreet Care</span>
+                            <span class="impact-tag">Professional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Gallery Section -->
+        <section class="health-gallery" id="gallery">
+            <div class="section-header">
+                <h2 class="section-title">Women's Health Focus Areas</h2>
+                <p class="section-subtitle">
+                    Specialized care for every aspect of your wellness journey
+                </p>
+            </div>
+
+            <div class="gallery-3d">
+                <div class="gallery-item breast-health">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Medical professional discussing breast health with patient" class="gallery-image">
+                        <div class="image-overlay"></div>
+                        <div class="image-shimmer"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <div class="gallery-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Breast Health</h3>
+                        <p>Early detection & comprehensive care with AI-powered assessments and personalized recommendations</p>
+                        <div class="gallery-stats">
+                            <span><i class="fas fa-shield-alt"></i> 95% Accuracy</span>
+                            <span><i class="fas fa-clock"></i> 5-min Assessment</span>
+                            <span><i class="fas fa-award"></i> Award-Winning</span>
+                        </div>
+                        <a href="breast.html" class="gallery-btn">
+                            <span>Explore Breast Health</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item period-health">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551190832-a923c7dce5ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Menstrual Health and Cycle Tracking" class="gallery-image">
+                        <div class="image-overlay"></div>
+                        <div class="image-shimmer"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <div class="gallery-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Period Health</h3>
+                        <p>Intelligent cycle tracking with AI predictions, ovulation forecasting, and comprehensive health insights</p>
+                        <div class="gallery-stats">
+                            <span><i class="fas fa-brain"></i> AI Predictions</span>
+                            <span><i class="fas fa-chart-line"></i> Pattern Analysis</span>
+                            <span><i class="fas fa-bell"></i> Smart Alerts</span>
+                        </div>
+                        <a href="menstrual_health.html" class="gallery-btn">
+                            <span>Track Your Cycle</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item vaginal-health">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vaginal Health and Wellness Care" class="gallery-image">
+                        <div class="image-overlay"></div>
+                        <div class="image-shimmer"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <div class="gallery-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3>Vaginal Health</h3>
+                        <p>Discreet assessments and personalized wellness guidance for comprehensive reproductive health management</p>
+                        <div class="gallery-stats">
+                            <span><i class="fas fa-user-md"></i> Expert-Reviewed</span>
+                            <span><i class="fas fa-lock"></i> 100% Private</span>
+                            <span><i class="fas fa-award"></i> Medical Grade</span>
+                        </div>
+                        <a href="vaginal_health.html" class="gallery-btn">
+                            <span>Assess Vaginal Health</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Features Section -->
+        <section class="platform-features" id="explore">
+            <div class="section-header">
+                <h2 class="section-title">Explore Your Complete Health Platform</h2>
+                <p class="section-subtitle">
+                    Comprehensive tools and insights for every stage of your wellness journey
+                </p>
+            </div>
+
+            <div class="features-showcase">
+                <div class="feature-card home-feature">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <h3>Home Dashboard</h3>
+                        <span class="feature-badge">Starting Point</span>
+                    </div>
+                    <div class="feature-content">
+                        <p>Your gateway to personalized women's health with instant assessments, AI guidance, and comprehensive wellness tracking</p>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Quick Health Checks</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Health Assistant</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Health Overview</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-footer">
+                        <a href="index.html" class="feature-link">
+                            <span>Start Your Journey</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="feature-card about-feature">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-info-circle"></i>
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <h3>About Alera</h3>
+                        <span class="feature-badge">Our Story</span>
+                    </div>
+                    <div class="feature-content">
+                        <p>Discover our mission to revolutionize women's healthcare through AI technology, medical expertise, and compassionate care</p>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-bullseye"></i>
+                                <span>Our Mission</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Expert Team</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Success Stories</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-footer">
+                        <a href="about.html" class="feature-link">
+                            <span>Learn Our Story</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="feature-card dashboard-feature">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <h3>Health Dashboard</h3>
+                        <span class="feature-badge">Command Center</span>
+                    </div>
+                    <div class="feature-content">
+                        <p>Your personal health command center with comprehensive analytics, goal setting, and progress tracking</p>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>Health Metrics</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-bullseye"></i>
+                                <span>Goal Setting</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-trending-up"></i>
+                                <span>Progress Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-footer">
+                        <a href="dashboard.html" class="feature-link">
+                            <span>View Dashboard</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dark Footer -->
+    <footer class="dark-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <span class="logo-text">Alera</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted companion for women's health, providing personalized care and support throughout your wellness journey.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="breast.html"><i class="fas fa-heart"></i> Breast Health</a></li>
+                        <li><a href="vaginal_health.html"><i class="fas fa-female"></i> Vaginal Health</a></li>
+                        <li><a href="menstrual_health.html"><i class="fas fa-calendar"></i> Period Health</a></li>
+                        <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Health Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="breast.html#assessment"><i class="fas fa-stethoscope"></i> Breast Assessment</a></li>
+                        <li><a href="vaginal_health.html#assessment"><i class="fas fa-clipboard-check"></i> Vaginal Assessment</a></li>
+                        <li><a href="menstrual_health.html#tracker"><i class="fas fa-calendar-check"></i> Period Tracker</a></li>
+                        <li><a href="dashboard.html#metrics"><i class="fas fa-chart-area"></i> Health Metrics</a></li>
+                        <li><a href="dashboard.html#goals"><i class="fas fa-bullseye"></i> Health Goals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#help"><i class="fas fa-question-circle"></i> Help Center</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                        <li><a href="#privacy"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="#terms"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                        <li><a href="#faq"><i class="fas fa-comments"></i> FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Alera. All rights reserved. Made with <i class="fas fa-heart" style="color: #ff4d94;"></i> for women's health.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">Privacy</a>
+                        <a href="#terms">Terms</a>
+                        <a href="#cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div id="aiChatWidget" class="ai-chat-widget" style="display: none;">
+        <div class="chat-header">
+            <h3><i class="fas fa-robot"></i> AI Health Assistant</h3>
+            <button onclick="toggleAIChat()" class="chat-close" aria-label="Close chat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be loaded here -->
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="ai-input" placeholder="Ask me about your health..." class="chat-input">
+            <button onclick="sendAIMessage()" class="chat-send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <button class="floating-chat-btn" onclick="toggleAIChat()" aria-label="Open AI Chat">
+        <i class="fas fa-robot"></i>
+    </button>
+
+    <script>
+        // AI Chat Functions
+        function toggleAIChat() {
+            const chatWidget = document.getElementById('aiChatWidget');
+            const isVisible = chatWidget.style.display !== 'none';
+            
+            if (isVisible) {
+                chatWidget.style.display = 'none';
+                chatWidget.classList.remove('active');
+            } else {
+                chatWidget.style.display = 'flex';
+                setTimeout(() => {
+                    chatWidget.classList.add('active');
+                }, 10);
+                
+                // Load initial message if empty
+                const messagesContainer = document.getElementById('chatMessages');
+                if (messagesContainer.innerHTML.trim() === '') {
+                    addAIMessage("Hello! I'm your AI Health Assistant. How can I help you with your women's health questions today?");
+                }
+            }
+        }
+
+        function addAIMessage(message) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'chat-message ai';
+            messageDiv.innerHTML = `
+                <div class="chat-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chat-bubble">${message}</div>
+            `;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function addUserMessage(message) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'chat-message user';
+            messageDiv.innerHTML = `
+                <div class="chat-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="chat-bubble">${message}</div>
+            `;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function sendAIMessage() {
+            const input = document.getElementById('ai-input');
+            const message = input.value.trim();
+            
+            if (message === '') return;
+            
+            // Add user message
+            addUserMessage(message);
+            
+            // Clear input
+            input.value = '';
+            
+            // Simulate AI response
+            setTimeout(() => {
+                const responses = [
+                    "That's a great question about women's health. Based on current medical guidelines, I recommend consulting with a healthcare provider for personalized advice.",
+                    "I understand your concern. Many women experience similar symptoms. It's always best to discuss these with your doctor for proper diagnosis and treatment.",
+                    "Thank you for asking about your health. While I can provide general information, your personal health decisions should always be made in consultation with qualified medical professionals.",
+                    "That's an important health topic. For the most accurate and personalized information, please speak with your healthcare provider who knows your medical history."
+                ];
+                
+                const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+                addAIMessage(randomResponse);
+            }, 1000);
+        }
+
+        // Enter key to send message
+        document.getElementById('ai-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendAIMessage();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add floating particles to hero section
+        function createParticles() {
+            const heroParticles = document.querySelector('.hero-particles');
+            if (heroParticles) {
+                for (let i = 0; i < 20; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.cssText = `
+                        position: absolute;
+                        width: ${Math.random() * 4 + 2}px;
+                        height: ${Math.random() * 4 + 2}px;
+                        background: rgba(255, 77, 148, ${Math.random() * 0.5 + 0.2});
+                        border-radius: 50%;
+                        left: ${Math.random() * 100}%;
+                        top: ${Math.random() * 100}%;
+                        animation: float ${Math.random() * 10 + 10}s ease-in-out infinite;
+                        animation-delay: ${Math.random() * 5}s;
+                    `;
+                    heroParticles.appendChild(particle);
+                }
+            }
+        }
+
+        // Initialize particles on load
+        document.addEventListener('DOMContentLoaded', createParticles);
+    </script>
+</body>
+</html>

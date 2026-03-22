@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Alera AI</title>
+<link rel="stylesheet" href="../assets/css/alera_index.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ===================== -->
+    <!-- SIDEBAR -->
+    <!-- ===================== -->
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <h2> Alera</h2>
+        </div>
+
+        <button class="new-chat" onclick="newChat()">+ New Chat</button>
+
+        <div class="chat-list">
+            <!-- chats will load here dynamically -->
+        </div>
+
+        <div class="sidebar-footer">
+            <p>Nahbila Faith</p>
+            <small>Free Plan</small>
+        </div>
+
+    </div>
+
+
+    <!-- ===================== -->
+    <!-- MAIN CONTENT -->
+    <!-- ===================== -->
+    <div class="main-content">
+
+        <!-- LEFT PANEL (DOCTOR IMAGE) -->
+        <div class="left-panel">
+            <img src="./assets/images/doctor.png" alt="Dr Alera">
+            <h2>Dr. Alera </h2>
+            <p>Your private women’s health companion</p>
+        </div>
+
+
+        <!-- RIGHT PANEL (CHAT) -->
+        <div class="chat-section">
+
+            <div class="chat-header">
+                <h3>Alera AI Assistant</h3>
+                <span>● Online</span>
+            </div>
+
+            <div id="chat-box"></div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Ask me anything about your health...">
+                <button onclick="sendMessage()">➤</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./assets/js/alera_script.js"></script>
+</body>
+</html>

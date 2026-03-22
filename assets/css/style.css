@@ -1,0 +1,256 @@
+/* =================== RESET =================== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  line-height:1.6;
+  color:#1F2937;
+  background:#f9fafb;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+position:sticky;
+top:20px;
+z-index:1000;
+
+margin:10px auto;
+width:90%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:12px 30px;
+
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(10px);
+
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+.logo-link{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-img{
+width:45px;
+height:45px;
+border-radius:50%;
+}
+
+.logo-text{
+font-size:20px;
+font-weight:700;
+background:linear-gradient(135deg,#4CAF98,#6EE7B7);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* NAV LINKS */
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+position:relative;
+color:#1f2937;
+font-weight:500;
+transition:0.3s;
+}
+
+/* underline animation */
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0%;
+height:2px;
+background:#4CAF98;
+transition:0.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.nav-links a:hover{
+color:#4CAF98;
+}
+
+.nav-links a.active{
+color:#4CAF98;
+font-weight:600;
+}
+
+/* ACTION BUTTONS */
+.nav-actions{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+
+
+a{
+  text-decoration:none;
+}
+
+/* =================== AUTH CONTAINER =================== */
+.auth-container{
+  max-width:400px;
+  margin:80px auto;
+  padding:40px 30px;
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(12px);
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+  text-align:center;
+  transition:0.3s;
+}
+
+.auth-container:hover{
+  transform:translateY(-3px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* =================== HEADINGS =================== */
+.auth-container h2{
+  margin-bottom:25px;
+  font-size:28px;
+  font-weight:700;
+  background: linear-gradient(135deg,#3b82f6,#42c9a8,#f472b6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* =================== FORM =================== */
+.auth-container form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.auth-container input{
+  padding:12px 15px;
+  border:1px solid #cbd5e1;
+  border-radius:12px;
+  font-size:16px;
+  transition:0.3s;
+  background:rgba(255,255,255,0.8);
+}
+
+.auth-container input:focus{
+  border:2px solid #3b82f6;
+  outline:none;
+  box-shadow:0 5px 15px rgba(59,130,246,0.2);
+}
+
+/* =================== BUTTONS =================== */
+.signup-btn, .login-btn{
+  position:relative;
+  padding:12px 25px;
+  border-radius:25px;
+  font-weight:600;
+  cursor:pointer;
+  border:none;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.signup-btn{
+  background:linear-gradient(135deg,#3b82f6,#42c9a8,#f472b6);
+  color:white;
+  box-shadow:0 5px 15px rgba(59,130,246,0.4);
+}
+
+.signup-btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent);
+  transition:0.5s;
+}
+
+.signup-btn:hover::before{
+  left:100%;
+}
+
+.signup-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(59,130,246,0.6);
+}
+
+.login-btn{
+  background:white;
+  color:#3b82f6;
+  border:2px solid #3b82f6;
+}
+
+.login-btn:hover{
+  background:#e0f2fe;
+  transform:translateY(-2px);
+}
+
+/* =================== ERROR MESSAGE =================== */
+.auth-container .error{
+  color:#f43f5e;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+/* =================== LINKS =================== */
+.auth-container p{
+  margin-top:15px;
+  font-size:14px;
+}
+
+.auth-container a{
+  color:#3b82f6;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.auth-container a:hover{
+  text-decoration:underline;
+}
+
+/* =================== MOBILE =================== */
+@media (max-width:480px){
+  .auth-container{
+    margin:50px 15px;
+    padding:30px 20px;
+  }
+
+  .auth-container h2{
+    font-size:24px;
+  }
+
+  .signup-btn, .login-btn{
+    padding:10px 20px;
+    font-size:14px;
+  }
+
+  .auth-container input{
+    padding:10px 12px;
+    font-size:14px;
+  }
+}
